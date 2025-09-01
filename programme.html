@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Programme des soutenances</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+  <header>
+    <h1>📅 Programme des soutenances</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="style-guide.html">Guide</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter-section">
+      <label for="jourSelect">Filtrer par date :</label>
+      <select id="jourSelect">
+        <option value="all">Toutes les dates</option>
+      </select>
+    </section>
+
+    <section>
+      <table id="programmeTable">
+        <thead>
+            <tr>
+                <th data-col="nom">Nom ⬍</th>
+                <th data-col="titre">Titre ⬍</th>
+                <th data-col="directeur">Directeur ⬍</th>
+                <th data-col="date">Date ⬍</th>
+                <th data-col="heure">Heure ⬍</th>
+                <th data-col="salle">Salle ⬍</th>
+                <th>Détails</th>
+            </tr>
+        </thead>
+
+        <tbody>
+          <!-- Rempli en JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - L2 MATH-INFO CLASSIQUE | Université de Kikwit</p>
+  </footer>
+
+  <script src="assets/js/programme.js"></script>
+</body>
+</html>

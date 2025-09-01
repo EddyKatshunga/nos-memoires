@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos de notre promotion</title>
+  <style>
+    :root {
+      --primary-color: #1976D2;
+      --secondary-color: #f5f7fa;
+      --text-color: #333;
+      --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--secondary-color);
+      margin: 0;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .photo-container {
+      width: 100%;
+      margin: 2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-container img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-caption {
+      padding: 0.8rem;
+      background: white;
+      text-align: center;
+      font-style: italic;
+      color: #666;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .stat-card {
+      background: white;
+      flex: 1 1 200px;
+      padding: 1.8rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: var(--card-shadow);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .stat-card h2 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin: 0.5rem 0;
+    }
+
+    .stat-card p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .description {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .description h2 {
+      color: var(--primary-color);
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .description p {
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 1.5rem;
+      background: #e1e5eb;
+      color: #555;
+    }
+
+    /* Media Queries pour l'adaptabilité */
+    @media (max-width: 768px) {
+      header {
+        padding: 2rem 1rem;
+      }
+      
+      header h1 {
+        font-size: 1.8rem;
+      }
+      
+      header p {
+        font-size: 1.1rem;
+      }
+      
+      .stat-card {
+        flex: 1 1 150px;
+        padding: 1.5rem 1rem;
+      }
+      
+      .stat-card h2 {
+        font-size: 2rem;
+      }
+      
+      .description {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats {
+        gap: 1rem;
+      }
+      
+      .stat-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Promotion Informatique 2021-2025</h1>
+    <p>“Innovation, Passion et Excellence au service du savoir”</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        Notre promotion a suivi un parcours de quatre années d'études en informatique, 
+        explorant des domaines variés allant du développement logiciel aux systèmes intelligents. 
+        Ensemble, nous avons relevé des défis académiques, participé à des projets innovants et préparé nos mémoires de fin d'études.
+      </p>
+      
+      <div class="photo-container">
+        <img src="assets/images/promo.jpg" alt="Photo de la promotion informatique 2021-2025">
+        <div class="photo-caption">Notre promotion réunie pour célébrer nos années d'études</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h2>29</h2>
+        <p>Étudiants</p>
+      </div>
+      <div class="stat-card">
+        <h2>5</h2>
+        <p>Années d'études</p>
+      </div>
+      <div class="stat-card">
+        <h2>15</h2>
+        <p>Projets réalisés</p>
+      </div>
+      <div class="stat-card">
+        <h2>3</h2>
+        <p>Domaines de spécialisation</p>
+      </div>
+    </section>
+
+    <section class="description">
+      <h2>Notre vision</h2>
+      <p>
+        Cette promotion se distingue par sa cohésion, sa curiosité scientifique et sa capacité à innover. 
+        Nos travaux de fin d'études reflètent notre engagement à produire des solutions pratiques et créatives pour répondre aux besoins du monde numérique actuel.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 - L2 MATH-INFO CLASSIQUE | Université de Kikwit
+  </footer>
+</body>
+</html>

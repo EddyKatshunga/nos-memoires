@@ -1,0 +1,34 @@
+memoire-site/
+│
+├── index.html                 # Page d’accueil (présentation générale, menu, recherche d’étudiant)
+├── etudiant.html              # Page dynamique pour afficher le détail d’un étudiant
+├── about.html                 # Présentation de la promo / enseignants (optionnel, sympa)
+├── programme.html              # Planning global des soutenances
+├── style-guide.html           # Modalités pratiques : habillement, consignes, etc.
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css          # Styles globaux
+│   │   ├── responsive.css     # Pour l’adaptation mobile/tablette
+│   │   └── theme.css          # Couleurs, polices, variables CSS
+│   │
+│   ├── js/
+│   │   ├── script.js          # Script principal (menu, recherche, filtres…)
+│   │   ├── etudiant.js        # Chargement dynamique des détails d’un étudiant
+│   │   ├── filters.js         # Fonctions pour filtrer/rechercher un étudiant
+│   │   └── ui.js              # Animations, interactions (effets, humour, fun)
+│   │
+│   ├── data/
+│   │   └── etudiants.json     # Données : liste des 29 étudiants (nom, photo, mémoire, date…)
+│   │
+│   ├── images/
+│   │   ├── etudiants/         # Photos de chaque étudiant
+│   │   │   ├── etu01.jpg
+│   │   │   ├── etu02.jpg
+│   │   │   └── ...
+│   │   ├── logos/             # Logo université, logos faculté
+│   │   └── icons/             # Icônes diverses (menu, réseaux sociaux…)
+│   │
+│   └── fonts/                 # Polices personnalisées (optionnel)
+│
+└── README.md                  # Documentation du projet (pour GitHub/Netlify)
