@@ -5,7 +5,7 @@
     "photo": "assets/images/etudiants/E1.jpg",
     "titre": "Optimisation des systèmes distribués dans le cloud",
     "directeur": "Prof. KAFUNDA",
-    "date": "2025-09-10",
+    "date": "2025-09-06",
     "heure": "09:00",
     "salle": "Amphi 1",
     "resume": "Ce mémoire propose une méthode innovante de répartition de charges pour améliorer les performances des systèmes distribués dans un environnement cloud."
@@ -16,7 +16,7 @@
     "photo": "assets/images/etudiants/E2.jpg",
     "titre": "Systèmes experts pour l’optimisation du service client bancaire",
     "directeur": "Prof. MANGONGO Yves",
-    "date": "2025-09-11",
+    "date": "2025-09-06",
     "heure": "11:30",
     "salle": "Amphi 2",
     "resume": "Développement d’un système expert basé sur la logique floue afin d’automatiser et d’optimiser les décisions liées au service client bancaire."
@@ -27,7 +27,7 @@
     "photo": "assets/images/etudiants/E3.jpg",
     "titre": "Conception d'un assistant intelligent à base de système expert: Amélioration du système Rawbot de la Rawbank",
     "directeur": "Prof. MANGONGO Yves",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
@@ -38,7 +38,7 @@
     "photo": "assets/images/etudiants/E4.jpg",
     "titre": "Sécurité des réseaux IoT dans les environnements critiques",
     "directeur": "Prof. MANGONGO Yves",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
@@ -49,7 +49,7 @@
     "photo": "assets/images/etudiants/E5.jpg",
     "titre": "Sécurité des réseaux IoT dans les environnements critiques",
     "directeur": "Prof. TSHIMANGA Célestin",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
@@ -60,7 +60,7 @@
     "photo": "assets/images/etudiants/E6.jpg",
     "titre": "Apprentissage artificiel basé sur la combinaison des classifieurs automatiques par vote majoritaire pour la prédiction de syndrome métabolique",
     "directeur": "Prof. MANGONGO Yves",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
@@ -71,7 +71,7 @@
     "photo": "assets/images/etudiants/E7.jpg",
     "titre": "De l'Architecture web classique aux applications web progressives: création d'un site web immobilier installable et utilisable hors ligne",
     "directeur": "Prof. TAMBA Gordien",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
@@ -82,7 +82,7 @@
     "photo": "assets/images/etudiants/E8.jpg",
     "titre": "Optimisation des hyperparamètres en apprentissage automatiques : Etude comparatives des méthodes d'optimisation",
     "directeur": "Prof. MANGONGO Yves",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
@@ -93,9 +93,20 @@
     "photo": "assets/images/etudiants/E9.jpg",
     "titre": "Etudes portant sur la configuration d'un réseau WAN via le protocole BGP, cas de la DGI Kikwit",
     "directeur": "Prof. TSHIMANGA Célestin",
-    "date": "2025-09-12",
+    "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
     "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+  },
+  {
+    "id": "etu10",
+    "nom": "IR NTUNGA HERITIER",
+    "photo": "assets/images/etudiants/E10.jpg",
+    "titre": "Etudes portant sur la comparaison de la QOS de deux protocoles de routage dynamique OSPF et EIGRP: Cas de l'Université de Kikwit",
+    "directeur": "Prof. TSHIMANGA Célestin",
+    "date": "2025-09-06",
+    "heure": "14:00",
+    "salle": "Salle B-204",
+    "resume": "Ce travail démontre que le choix du protocole dépend du contexte : EIGRP est recommandé pour des réseaux CISCO de taille moyenne où la rapidité est cruciale, tandis que OSPF s'impose dans les environnements hétérogènes et de grande échelle. La recherche ouvre des perspectives pour étudier d'autres protocoles comme BGP dans des contextes de réseaux interuniversitaires."
   }
 ]
