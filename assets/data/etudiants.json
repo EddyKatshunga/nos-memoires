@@ -3,12 +3,12 @@
     "id": "etu01",
     "nom": "IR MOKE BOKULE JONATHAN (CP)",
     "photo": "assets/images/etudiants/E1.jpg",
-    "titre": "Optimisation des systèmes distribués dans le cloud",
+    "titre": "Apprentissage artificiel basé sur le réseau de neuronnes à convolution pour la reconnaissance des émotions à partir des expressions faciales.",
     "directeur": "Prof. KAFUNDA Pierre",
     "date": "2025-09-06",
     "heure": "10:00",
     "salle": "Salle 01",
-    "resume": "Venez découvrir comment l'optimisation des systèmes distribués dans le cloud permet de révolutionner l'architecture informatique en augmentant la résilience, la scalabilité et l'efficacité des infrastructures modernes."
+    "resume": "Venez découvrir comment l'apprentissage artificiel, en s'appuyant sur la puissance des réseaux de neurones à convolution, permet une reconnaissance précise et innovante des émotions à partir des expressions faciales, ouvrant ainsi la voie à des applications avancées en interaction homme-machine, en psychologie numérique et en diagnostic médical assisté."
   },
   {
     "id": "etu02",
@@ -141,5 +141,27 @@
     "heure": "14:00",
     "salle": "Salle 01",
     "resume": "Venez découvrir comment la mise en place d'un système intelligent fondé sur les réseaux de neurones artificiels révolutionne la gestion des stocks à inventaire continu en permettant une prédiction précise des variables contrôlables, optimisant ainsi les niveaux de stock, réduisant les coûts logistiques et garantissant une supply chain agile et résiliente."
+  },
+  {
+    "id": "etu14",
+    "nom": "IR MATAFWADI SOPHIA",
+    "photo": "assets/images/etudiants/E14.jpg",
+    "titre": "Conception et implémentation d'un modèle prédictif basé sur XGBoot pour la classification des symptômes liées à la maternité: cas de l'HGR Kikwit.",
+    "directeur": "Prof. TSHIMANGA Célestin",
+    "date": "2025-09-06",
+    "heure": "14:20",
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment la conception et l'implémentation d'un modèle prédictif innovant, s'appuyant sur la puissance algorithmique de XGBoost, permettent de classifier avec une précision inédite les symptômes liés à la maternité à l'HGR de Kikwit, offrant ainsi un outil d'aide au diagnostic précoce et personnalisé pour améliorer la prise en charge médicale des patientes et réduire les risques materno-infantiles."
+  },
+  {
+    "id": "etu15",
+    "nom": "IR KOMBE MUTUTA LANDRY",
+    "photo": "assets/images/etudiants/E14.jpg",
+    "titre": "Etude portant sur la configuration et déploiement de la technologie Etherchannel dans un réseau intranet: cas de l'UNIKIK.",
+    "directeur": "Prof. TSHIMANGA Célestin",
+    "date": "2025-09-06",
+    "heure": "14:40",
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment une étude approfondie sur la configuration et le déploiement stratégique de la technologie EtherChannel au sein du réseau intranet de l'UNIKIK vise à révolutionner les performances réseau en agrégant les liaisons physiques pour créer des liens logiques à haute disponibilité, augmentant ainsi la bande passante, assurant la redondance et optimisant la résilience du réseau pour supporter les flux académiques et administratifs critiques."
   }
 ]
