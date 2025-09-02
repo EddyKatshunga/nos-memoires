@@ -130,5 +130,16 @@
     "heure": "13:40",
     "salle": "Salle B-204",
     "resume": "Venez découvrir comment l'étude innovante des méthodes de reconnaissance d'empreintes digitales par le deep learning vise à révolutionner le système de paiement automatisé des agents de l'UNIKIK en alliant sécurité biométrique de pointe, rapidité d'authentification et fiabilité optimale pour transformer la gestion des transactions financières."
+  },
+  {
+    "id": "etu13",
+    "nom": "IR MUKUBA JUVEL",
+    "photo": "assets/images/etudiants/E13.jpg",
+    "titre": "Mise en place d'un système intelligent basé sur les réseaux de neuronnes pour la prédiction des variables contrôlables de gestion de stock à inventaire continu.",
+    "directeur": "Prof. KAFUNDA Pierre",
+    "date": "2025-09-06",
+    "heure": "14:00",
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment la mise en place d'un système intelligent fondé sur les réseaux de neurones artificiels révolutionne la gestion des stocks à inventaire continu en permettant une prédiction précise des variables contrôlables, optimisant ainsi les niveaux de stock, réduisant les coûts logistiques et garantissant une supply chain agile et résiliente."
   }
 ]
