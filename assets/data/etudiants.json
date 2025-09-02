@@ -4,33 +4,33 @@
     "nom": "IR MOKE BOKULE JONATHAN (CP)",
     "photo": "assets/images/etudiants/E1.jpg",
     "titre": "Optimisation des systèmes distribués dans le cloud",
-    "directeur": "Prof. KAFUNDA",
+    "directeur": "Prof. KAFUNDA Pierre",
     "date": "2025-09-06",
     "heure": "09:00",
-    "salle": "Amphi 1",
-    "resume": "Ce mémoire propose une méthode innovante de répartition de charges pour améliorer les performances des systèmes distribués dans un environnement cloud."
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment l'optimisation des systèmes distribués dans le cloud permet de révolutionner l'architecture informatique en augmentant la résilience, la scalabilité et l'efficacité des infrastructures modernes."
   },
   {
     "id": "etu02",
     "nom": "IR BULANGUNGA KAFWAY STIVE (CPA)",
     "photo": "assets/images/etudiants/E2.jpg",
-    "titre": "Systèmes experts pour l’optimisation du service client bancaire",
+    "titre": "Conception et réalisation d'une plateforme web sécurisé basée sur SOAP pour la réservation des billets de voyage en ligne chez TRANSCO.",
     "directeur": "Prof. MANGONGO Yves",
     "date": "2025-09-06",
     "heure": "11:30",
-    "salle": "Amphi 2",
-    "resume": "Développement d’un système expert basé sur la logique floue afin d’automatiser et d’optimiser les décisions liées au service client bancaire."
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment la conception et la réalisation méticuleuse d'une plateforme web hautement sécurisée, s'appuyant sur la rigueur architecturale du protocole SOAP, ambitionnent de transformer fondamentalement l'écosystème de réservation en ligne chez TRANSCO en offrant une solution non seulement interopérable et fiable, mais aussi inviolable, garantissant ainsi l'intégrité des transactions, la confidentialité absolue des données clients et une expérience utilisateur fluide et confiante pour chaque voyage."
   },
   {
     "id": "etu03",
     "nom": "IR KATSHUNGA NTEN EDDY",
     "photo": "assets/images/etudiants/E3.jpg",
-    "titre": "Conception d'un assistant intelligent à base de système expert: Amélioration du système Rawbot de la Rawbank",
+    "titre": "Conception d'un assistant intelligent à base de système expert: Amélioration du système Rawbot de la Rawbank.",
     "directeur": "Prof. MANGONGO Yves",
     "date": "2025-09-06",
     "heure": "14:00",
-    "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment la conception d'un assistant intelligent, s'appuyant sur la rigueur d'un système expert et les potentialités de l'IA, vise à métamorphoser le service client de la Rawbank en un conseiller virtuel de pointe, capable de traiter des requêtes complexes avec une précision inégalée, d'anticiper les besoins des clients, et de rehausser ainsi significativement la qualité du service, la sécurité des opérations et l'efficacité opérationnelle au cœur de l'écosystème bancaire."
   },
   {
     "id": "etu04",
@@ -40,19 +40,19 @@
     "directeur": "Prof. MANGONGO Yves",
     "date": "2025-09-06",
     "heure": "14:00",
-    "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "salle": "Salle 01",
+    "resume": "Sécurité des réseaux IoT dans les environnements critiques."
   },
   {
     "id": "etu05",
     "nom": "IR KINDALO MARIE MADELEINE",
     "photo": "assets/images/etudiants/E5.jpg",
-    "titre": "Sécurité des réseaux IoT dans les environnements critiques",
+    "titre": "Etude portant sur le deploiement d'un réseau étendu via le protocole dynamique EIGRP: Cas de l'Université de Kikwit.",
     "directeur": "Prof. TSHIMANGA Célestin",
     "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "resume": "Venez découvrir comment une étude approfondie sur le déploiement stratégique d'un réseau étendu, utilisant la puissance du protocole dynamique EIGRP, vise à moderniser et sécuriser l'infrastructure numérique de l'Université de Kikwit en garantissant une connectivité robuste, une convergence rapide des routes et une gestion scalable des flux de données pour supporter les besoins académiques et administratifs de demain."
   },
   {
     "id": "etu06",
@@ -63,7 +63,7 @@
     "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "resume": "Venez découvrir comment l'apprentissage artificiel, en combinant de manière innovante la puissance de plusieurs classifieurs automatiques grâce à la méthode de vote majoritaire, ouvre de nouvelles perspectives pour la prédiction précise et fiable du syndrome métabolique, offrant ainsi un outil d'aide au diagnostic puissant pour la médecine préventive."
   },
   {
     "id": "etu07",
@@ -74,7 +74,7 @@
     "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "resume": "Venez découvrir comment la transition révolutionnaire d'une architecture web classique vers une Application Web Progressive (PWA) permet de créer un site immobilier innovant, entièrement installable et fonctionnel même hors connexion, offrant ainsi une expérience utilisateur immersive, réactive et sans interruption, comparable à une application native."
   },
   {
     "id": "etu08",
@@ -85,7 +85,7 @@
     "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "resume": "Venez découvrir comment l'optimisation poussée des hyperparamètres en apprentissage automatique, à travers une étude comparative rigoureuse des méthodes d'optimisation avancées, permet de déverrouiller le plein potentiel des modèles prédictifs en améliorant radicalement leur précision, leur robustesse et leur efficacité, transformant ainsi la manière dont nous concevons et déployons l'intelligence artificielle."
   },
   {
     "id": "etu09",
@@ -96,7 +96,7 @@
     "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
-    "resume": "Étude et mise en œuvre de mécanismes de chiffrement et d’authentification pour sécuriser les communications dans les réseaux IoT."
+    "resume": "Venez découvrir comment une étude approfondie sur la configuration stratégique d'un réseau étendu (WAN) utilisant la puissance et la flexibilité du protocole BGP (Border Gateway Protocol) vise à moderniser, sécuriser et optimiser radicalement l'infrastructure réseau de la Direction Générale des Impôts de Kikwit, en garantissant une interconnectivité fiable, une gestion granulaire du trafic et une résilience accrue pour supporter les missions critiques de l'administration fiscale."
   },
   {
     "id": "etu10",
@@ -107,6 +107,6 @@
     "date": "2025-09-06",
     "heure": "14:00",
     "salle": "Salle B-204",
-    "resume": "Ce travail démontre que le choix du protocole dépend du contexte : EIGRP est recommandé pour des réseaux CISCO de taille moyenne où la rapidité est cruciale, tandis que OSPF s'impose dans les environnements hétérogènes et de grande échelle. La recherche ouvre des perspectives pour étudier d'autres protocoles comme BGP dans des contextes de réseaux interuniversitaires."
+    "resume": "Venez découvrir comment une étude comparative approfondie de la Qualité de Service (QoS) entre les protocoles de routage dynamique OSPF et EIGRP vise à optimiser radicalement les performances, la stabilité et l'efficacité du réseau de l'Université de Kikwit, en identifiant la solution la plus adaptée pour garantir une connectivité robuste, prioriser le trafic critique et supporter les besoins pédagogiques et administratifs de demain."
   }
 ]

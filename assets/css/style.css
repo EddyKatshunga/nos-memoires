@@ -338,3 +338,113 @@ th[data-col]:hover {
     font-size: 0.9rem;
   }
 }
+
+/* ====== Carte d’introduction ====== */
+.intro-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.intro-card h2 {
+  margin-top: 0;
+  color: #1976D2;
+  font-size: 1.4rem;
+}
+
+.intro-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ====== Filtre comboBox ====== */
+.filter-section {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.filter-section label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #1976D2;
+}
+
+.filter-section select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-section select:focus {
+  border-color: #1976D2;
+  box-shadow: 0 0 6px rgba(25,118,210,0.4);
+  outline: none;
+}
+
+/* ====== Table programme ====== */
+.table-section {
+  overflow-x: auto; /* scroll horizontal si trop large */
+}
+
+table {
+  font-size: 0.95rem; /* texte plus discret */
+}
+
+td, th {
+  padding: 0.6rem;
+  white-space: nowrap; /* évite que ça coupe mal */
+}
+
+/* ====== Responsivité spécifique au tableau ====== */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.85rem; /* plus petit sur tablette */
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  .intro-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .intro-card p {
+    font-size: 0.9rem;
+  }
+
+  .filter-section select {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.8rem; /* compact sur mobile */
+  }
+
+  th, td {
+    padding: 0.4rem;
+  }
+
+  .intro-card {
+    padding: 1rem;
+  }
+
+  .intro-card h2 {
+    font-size: 1rem;
+  }
+
+  .intro-card p {
+    font-size: 0.85rem;
+  }
+}

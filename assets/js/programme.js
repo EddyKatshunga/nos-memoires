@@ -1,72 +1,9 @@
 const tableBody = document.querySelector("#programmeTable tbody");
-const jourSelect = document.getElementById("jourSelect");
-let allEtudiants = [];
-
-// Charger le fichier JSON
-fetch("assets/data/etudiants.json")
-  .then(response => response.json())
-  .then(data => {
-    // Trier par date et heure
-    allEtudiants = data.sort((a, b) => {
-      return new Date(`${a.date}T${a.heure}`) - new Date(`${b.date}T${b.heure}`);
-    });
-
-    // Construire la liste des jours distincts
-    const joursUniques = [...new Set(allEtudiants.map(e => e.date))];
-    joursUniques.forEach(date => {
-      const opt = document.createElement("option");
-      opt.value = date;
-      opt.textContent = new Date(date).toLocaleDateString("fr-FR", {
-        weekday: "long", year: "numeric", month: "long", day: "numeric"
-      });
-      jourSelect.appendChild(opt);
-    });
-
-    afficherProgramme(allEtudiants);
-  })
-  .catch(error => {
-    console.error("Erreur chargement JSON:", error);
-    tableBody.innerHTML = `<tr><td colspan="7">⚠️ Impossible de charger le programme.</td></tr>`;
-  });
-
-// Fonction pour afficher le programme
-function afficherProgramme(etudiants) {
-  tableBody.innerHTML = "";
-
-  if (etudiants.length === 0) {
-    tableBody.innerHTML = `<tr><td colspan="7">Aucune soutenance prévue ce jour.</td></tr>`;
-    return;
-  }
-
-  etudiants.forEach(e => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${e.nom}</td>
-      <td>${e.titre}</td>
-      <td>${e.directeur}</td>
-      <td>${new Date(e.date).toLocaleDateString("fr-FR")}</td>
-      <td>${e.heure}</td>
-      <td>${e.salle}</td>
-      <td><a href="etudiant.html?id=${e.id}">Voir</a></td>
-    `;
-    tableBody.appendChild(tr);
-  });
-}
-
-// Filtrer par jour
-jourSelect.addEventListener("change", () => {
-  const valeur = jourSelect.value;
-  if (valeur === "all") {
-    afficherProgramme(allEtudiants);
-  } else {
-    const filtres = allEtudiants.filter(e => e.date === valeur);
-    afficherProgramme(filtres);
-  }
-});
-
-
+const directeurSelect = document.getElementById("directeurSelect");
 const headers = document.querySelectorAll("#programmeTable th[data-col]");
-let ordreTri = {}; // Pour garder l’état du tri (asc/desc)
+
+let allEtudiants = [];
+let ordreTri = {}; // état du tri (asc/desc)
 
 // Charger le fichier JSON
 fetch("assets/data/etudiants.json")
@@ -77,15 +14,13 @@ fetch("assets/data/etudiants.json")
       return new Date(`${a.date}T${a.heure}`) - new Date(`${b.date}T${b.heure}`);
     });
 
-    // Construire la liste des jours distincts
-    const joursUniques = [...new Set(allEtudiants.map(e => e.date))];
-    joursUniques.forEach(date => {
+    // Construire la liste des directeurs distincts
+    const directeursUniques = [...new Set(allEtudiants.map(e => e.directeur))];
+    directeursUniques.forEach(directeur => {
       const opt = document.createElement("option");
-      opt.value = date;
-      opt.textContent = new Date(date).toLocaleDateString("fr-FR", {
-        weekday: "long", year: "numeric", month: "long", day: "numeric"
-      });
-      jourSelect.appendChild(opt);
+      opt.value = directeur;
+      opt.textContent = directeur;
+      directeurSelect.appendChild(opt);
     });
 
     afficherProgramme(allEtudiants);
@@ -100,7 +35,7 @@ function afficherProgramme(etudiants) {
   tableBody.innerHTML = "";
 
   if (etudiants.length === 0) {
-    tableBody.innerHTML = `<tr><td colspan="7">Aucune soutenance prévue ce jour.</td></tr>`;
+    tableBody.innerHTML = `<tr><td colspan="7">Aucune soutenance prévue.</td></tr>`;
     return;
   }
 
@@ -119,13 +54,13 @@ function afficherProgramme(etudiants) {
   });
 }
 
-// Filtrer par jour
-jourSelect.addEventListener("change", () => {
-  const valeur = jourSelect.value;
+// Filtrer par directeur
+directeurSelect.addEventListener("change", () => {
+  const valeur = directeurSelect.value;
   if (valeur === "all") {
     afficherProgramme(allEtudiants);
   } else {
-    const filtres = allEtudiants.filter(e => e.date === valeur);
+    const filtres = allEtudiants.filter(e => e.directeur === valeur);
     afficherProgramme(filtres);
   }
 });
@@ -142,14 +77,9 @@ headers.forEach(header => {
       let valA = a[col];
       let valB = b[col];
 
-      // Gérer les dates et heures correctement
       if (col === "date") {
         valA = new Date(a.date);
         valB = new Date(b.date);
-      }
-      if (col === "heure") {
-        valA = a.heure;
-        valB = b.heure;
       }
 
       if (valA < valB) return ordreTri[col] === "asc" ? -1 : 1;
@@ -159,7 +89,7 @@ headers.forEach(header => {
 
     afficherProgramme(sorted);
 
-    // Mettre en évidence l’ordre du tri (flèche ↑ ou ↓)
+    // Indiquer visuellement le tri
     headers.forEach(h => h.textContent = h.textContent.replace("▲", "⬍").replace("▼", "⬍"));
     header.textContent = header.textContent.replace("⬍", ordreTri[col] === "asc" ? "▲" : "▼");
   });

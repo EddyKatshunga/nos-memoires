@@ -14,21 +14,30 @@
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="programme.html">Programme</a></li>
-        <li><a href="style-guide.html">Guide</a></li>
+        <li><a href="style-guide.html">FAQ</a></li>
         <li><a href="about.html">À propos</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+  <!-- Carte de présentation -->
+    <section class="intro-card">
+      <h2>Bienvenue au programme des soutenances 🎓</h2>
+      <p>
+        Retrouvez ci-dessous la liste complète des soutenances de notre promotion.
+        Vous pouvez filtrer par directeur et trier le tableau en cliquant sur les en-têtes de colonnes.
+      </p>
+    </section>
+
     <section class="filter-section">
-      <label for="jourSelect">Filtrer par date :</label>
-      <select id="jourSelect">
-        <option value="all">Toutes les dates</option>
+      <label for="directeurSelect">Filtrer par directeur :</label>
+      <select id="directeurSelect">
+        <option value="all">Tous les directeurs</option>
       </select>
     </section>
 
-    <section>
+    <section class="table-section">
       <table id="programmeTable">
         <thead>
             <tr>
@@ -41,13 +50,13 @@
                 <th>Détails</th>
             </tr>
         </thead>
-
         <tbody>
           <!-- Rempli en JS -->
         </tbody>
       </table>
     </section>
   </main>
+
 
   <footer>
     <p>© 2025 - L2 MATH-INFO CLASSIQUE | Université de Kikwit</p>
