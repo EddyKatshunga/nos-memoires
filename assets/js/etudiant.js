@@ -7,7 +7,12 @@ const container = document.getElementById("etudiant-detail");
 
 // Charger le fichier JSON
 fetch("assets/data/etudiants.json")
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Erreur HTTP " + response.status);
+    }
+    return response.json();
+  })
   .then(data => {
     // Trouver l'étudiant correspondant
     const etudiant = data.find(e => e.id === etuId);
@@ -17,18 +22,23 @@ fetch("assets/data/etudiants.json")
       return;
     }
 
+    // Image de fallback si manquante
+    const photo = etudiant.photo && etudiant.photo.trim() !== "" 
+      ? etudiant.photo 
+      : "assets/img/default-profile.png";
+
     // Construire le HTML
     container.innerHTML = `
       <div class="fiche-etudiant">
-        <img src="${etudiant.photo}" alt="Photo de ${etudiant.nom}" class="photo-etudiant">
+        <img src="${photo}" alt="Photo de ${etudiant.nom}" class="photo-etudiant">
         <h2>${etudiant.nom}</h2>
-        <h3>${etudiant.titre}</h3>
-        <p><strong>Directeur :</strong> ${etudiant.directeur}</p>
-        <p><strong>Date :</strong> ${etudiant.date} à ${etudiant.heure}</p>
-        <p><strong>Salle :</strong> ${etudiant.salle}</p>
+        <h3>${etudiant.titre || "Titre non renseigné"}</h3>
+        <p><strong>Directeur :</strong> ${etudiant.directeur || "Non renseigné"}</p>
+        <p><strong>Date :</strong> ${etudiant.date || "—"} ${etudiant.heure ? "à " + etudiant.heure : ""}</p>
+        <p><strong>Salle :</strong> ${etudiant.salle || "Non précisée"}</p>
         <div class="resume">
           <h4>Résumé</h4>
-          <p>${etudiant.resume}</p>
+          <p>${etudiant.resume && etudiant.resume.trim() !== "" ? etudiant.resume : "Résumé non disponible."}</p>
         </div>
         <a href="index.html" class="btn-retour">← Retour à la liste</a>
       </div>

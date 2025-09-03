@@ -1,4 +1,4 @@
-/* ====== Général ====== */
+/* ====== Général ====== */ 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -124,12 +124,33 @@ footer {
   background: #125a9c;
 }
 
-/* ====== Fiche étudiant ====== */
+/* ====== Fiche étudiant (wrapper + contenu) ====== */
+.fiche-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.fiche-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* voile blanc semi-transparent */
+  backdrop-filter: blur(2px); /* léger flou */
+  z-index: 1;
+}
+
 .fiche-etudiant {
+  position: relative;
+  z-index: 2; /* au-dessus du voile */
   max-width: 700px;
-  margin: 2rem auto;
+  margin: auto;
   padding: 2rem;
-  background: white;
+  background: rgba(255,255,255,0.9);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   text-align: center;
@@ -200,6 +221,10 @@ footer {
 }
 
 /* ====== Table programme ====== */
+.table-section {
+  overflow-x: auto; /* scroll horizontal si trop large */
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -207,6 +232,7 @@ table {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 8px;
   overflow: hidden;
+  font-size: 0.95rem; /* texte plus discret */
 }
 
 thead {
@@ -218,6 +244,7 @@ th, td {
   padding: 0.8rem;
   border-bottom: 1px solid #ddd;
   text-align: left;
+  white-space: nowrap;
 }
 
 tbody tr:hover {
@@ -238,104 +265,6 @@ th[data-col]:hover {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* ====== Media Queries ====== */
-@media (max-width: 1024px) {
-  header h1 {
-    font-size: 1.4rem;
-  }
-
-  #searchInput {
-    width: 70%;
-  }
-
-  .grid-etudiants {
-    padding: 0 1rem;
-  }
-
-  .fiche-etudiant {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  #searchInput {
-    width: 80%;
-  }
-
-  .grid-etudiants {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    padding: 0 1rem;
-  }
-
-  .carte-etudiant img {
-    width: 100px;
-    height: 100px;
-  }
-
-  #countdown-section {
-    max-width: 90%;
-  }
-
-  .fiche-etudiant {
-    margin: 1rem;
-    padding: 1.2rem;
-  }
-
-  .fiche-etudiant img.photo-etudiant {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.2rem;
-  }
-
-  #searchInput {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  .carte-etudiant {
-    padding: 0.8rem;
-  }
-
-  .carte-etudiant .titre {
-    font-size: 0.8rem;
-  }
-
-  #countdown {
-    font-size: 1.2rem;
-  }
-
-  .fiche-etudiant img.photo-etudiant {
-    width: 100px;
-    height: 100px;
-  }
-
-  .fiche-etudiant {
-    padding: 1rem;
-  }
-
-  .fiche-etudiant h2 {
-    font-size: 1.2rem;
-  }
-
-  .fiche-etudiant h3 {
-    font-size: 1rem;
-  }
-
-  .fiche-etudiant p {
-    font-size: 0.9rem;
   }
 }
 
@@ -389,51 +318,109 @@ th[data-col]:hover {
   outline: none;
 }
 
-/* ====== Table programme ====== */
-.table-section {
-  overflow-x: auto; /* scroll horizontal si trop large */
+/* ====== Media Queries ====== */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  #searchInput {
+    width: 70%;
+  }
+
+  .grid-etudiants {
+    padding: 0 1rem;
+  }
+
+  .fiche-etudiant {
+    padding: 1.5rem;
+  }
 }
 
-table {
-  font-size: 0.95rem; /* texte plus discret */
-}
-
-td, th {
-  padding: 0.6rem;
-  white-space: nowrap; /* évite que ça coupe mal */
-}
-
-/* ====== Responsivité spécifique au tableau ====== */
 @media (max-width: 768px) {
-  table {
-    font-size: 0.85rem; /* plus petit sur tablette */
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  th, td {
-    padding: 0.5rem;
+  #searchInput {
+    width: 80%;
   }
 
-  .intro-card h2 {
-    font-size: 1.2rem;
+  .grid-etudiants {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    padding: 0 1rem;
   }
 
-  .intro-card p {
-    font-size: 0.9rem;
+  .carte-etudiant img {
+    width: 100px;
+    height: 100px;
   }
 
-  .filter-section select {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.8rem;
+  #countdown-section {
+    max-width: 90%;
+  }
+
+  .fiche-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .fiche-etudiant {
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+
+  .fiche-etudiant img.photo-etudiant {
+    width: 120px;
+    height: 120px;
   }
 }
 
 @media (max-width: 480px) {
-  table {
-    font-size: 0.8rem; /* compact sur mobile */
+  header h1 {
+    font-size: 1.2rem;
   }
 
-  th, td {
-    padding: 0.4rem;
+  #searchInput {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .carte-etudiant {
+    padding: 0.8rem;
+  }
+
+  .carte-etudiant .titre {
+    font-size: 0.8rem;
+  }
+
+  #countdown {
+    font-size: 1.2rem;
+  }
+
+  .fiche-wrapper {
+    padding: 1rem;
+  }
+
+  .fiche-etudiant {
+    padding: 1rem;
+  }
+
+  .fiche-etudiant img.photo-etudiant {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fiche-etudiant h2 {
+    font-size: 1.2rem;
+  }
+
+  .fiche-etudiant h3 {
+    font-size: 1rem;
+  }
+
+  .fiche-etudiant p {
+    font-size: 0.9rem;
   }
 
   .intro-card {
@@ -446,5 +433,18 @@ td, th {
 
   .intro-card p {
     font-size: 0.85rem;
+  }
+
+  .filter-section select {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  table {
+    font-size: 0.8rem; /* compact sur mobile */
+  }
+
+  th, td {
+    padding: 0.4rem;
   }
 }
