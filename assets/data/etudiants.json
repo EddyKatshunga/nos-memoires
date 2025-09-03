@@ -163,5 +163,38 @@
     "heure": "14:40",
     "salle": "Salle 01",
     "resume": "Venez découvrir comment une étude approfondie sur la configuration et le déploiement stratégique de la technologie EtherChannel au sein du réseau intranet de l'UNIKIK vise à révolutionner les performances réseau en agrégant les liaisons physiques pour créer des liens logiques à haute disponibilité, augmentant ainsi la bande passante, assurant la redondance et optimisant la résilience du réseau pour supporter les flux académiques et administratifs critiques."
+  },
+  {
+    "id": "etu16",
+    "nom": "IR KUBA LUSILU RACHEL",
+    "photo": "assets/images/etudiants/E16.jpg",
+    "titre": "Conception et déploiement d'un système de connexion via le protocole de routage dynamique OSPF: Etude de cas au diocèse de la Province du Kwilu.",
+    "directeur": "Prof. TSHIMANGA Célestin",
+    "date": "2025-09-06",
+    "heure": "15:00",
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment la conception et le déploiement stratégique d'un système de connexion via le protocole de routage dynamique OSPF au sein du diocèse de la Province du Kwilu visent à moderniser et sécuriser l'infrastructure réseau, en garantissant une interconnectivité fiable, une convergence rapide des routes et une gestion optimisée du trafic pour supporter les communications et les services numériques des communautés locales."
+  },
+  {
+    "id": "etu17",
+    "nom": "IR TWENUSIELA MAYELE ELI",
+    "photo": "assets/images/etudiants/E17.jpg",
+    "titre": "Développement d’une base de données pour l’attribution et la gestion des immatriculations administratives pour les engins automobiles dans la ville de Kikwit : cas de l’ITPR.",
+    "directeur": "Prof. TSHIMANGA Célestin",
+    "date": "2025-09-06",
+    "heure": "15:20",
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment le développement d'une base de données centralisée dédiée à l'attribution et la gestion des immatriculations administratives des engins automobiles à Kikwit, mené en collaboration avec l'ITPR, vise à moderniser et sécuriser le processus d'immatriculation, en luttant contre la fraude, en garantissant la traçabilité des véhicules et en offrant un service public efficace et transparent pour les citoyens."
+  },
+  {
+    "id": "etu18",
+    "nom": "IR GIMENA PABLO",
+    "photo": "assets/images/etudiants/E18.jpg",
+    "titre": "Détection des spams dans les mails.",
+    "directeur": "Prof. TSHIMANGA Célestin",
+    "date": "2025-09-06",
+    "heure": "15:40",
+    "salle": "Salle 01",
+    "resume": "Venez découvrir comment la conception d'un système intelligent de détection de spams dans les emails, alliant algorithmes de machine learning et analyse heuristique, permet de filtrer avec une précision inédite les courriers indésirables, renforçant ainsi la cybersécurité, protégeant la vie privée des utilisateurs et optimisant la productivité dans la gestion des communications numériques."
   }
 ]
